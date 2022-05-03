@@ -82,7 +82,12 @@
   --theme-code-bg: var(--color-gray-700);
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
+  min-height: 100vh;
   background: var(--theme-bg);
   color: var(--theme-text);
 }
@@ -160,7 +165,7 @@ nav ul {
 }
 
 :is(h2, h3):not(:first-child) {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 h1 {

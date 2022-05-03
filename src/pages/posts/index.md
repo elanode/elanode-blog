@@ -7,6 +7,7 @@ publishDate: 12 Sep 2021
 name: Nate Moore
 value: 128
 description: Just a Hello World Post!
+heroImage: /assets/blog/introducing-astro.jpg
 ---
 
 <Cool name={frontmatter.name} href="https://twitter.com/n_moore" client:load />
