@@ -1,14 +1,18 @@
 ---
 import elanodeLogoBlue from "../assets/images/Elanode-logo-blue.png";
+import LangSwitcher from "./LangSwitcher.vue";
+
+let lang = Astro.canonicalURL.pathname.split("/")[1];
 ---
 
 <header class="wrapper">
   <article>
     <h1>
-      <a href="/">
+      <a href={"/" + lang}>
         <img src={elanodeLogoBlue} alt="elanode logo blue" width="175" />
       </a>
     </h1>
+    <LangSwitcher client:load />
   </article>
 </header>
 

@@ -1,7 +1,7 @@
 ---
 setup: |
-  import Layout from '../../layouts/BlogPost.astro'
-  import Cool from '../../components/Author.astro'
+  import Layout from '../../../layouts/BlogPost.astro'
+  import Cool from '../../../components/Author.astro'
 title: Hello world 2!
 publishDate: 13 Sep 2021
 name: Nate Moore
