@@ -82,12 +82,7 @@
   --theme-code-bg: var(--color-gray-700);
 }
 
-html {
-  min-height: 100vh;
-}
-
 body {
-  min-height: 100vh;
   background: var(--theme-bg);
   color: var(--theme-text);
 }
