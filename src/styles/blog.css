@@ -160,9 +160,9 @@ nav ul {
   font-family: var(--font-heading);
 }
 
-:is(h1, h2) {
+/* :is(h1, h2) {
   max-width: 40ch;
-}
+} */
 
 :is(h2, h3):not(:first-child) {
   margin-top: 1.5rem;

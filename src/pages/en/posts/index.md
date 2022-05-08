@@ -12,6 +12,26 @@ heroImage: /assets/blog/introducing-astro.jpg
 
 <Cool name={frontmatter.name} href="https://twitter.com/n_moore" client:load />
 
+```php
+class HelloWorld {
+  public function __construct() {
+    echo 'Hello World!';
+  }
+}
+```
+
+```go
+func main() {
+  fmt.Println("Hello World")
+}
+```
+
+```html
+<div>
+  <h1><HelloWorld /></h1>
+</div>
+```
+
 This is so cool!
 
 Do variables work {frontmatter.value \* 2}?
