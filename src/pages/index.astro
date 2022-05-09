@@ -1,9 +1,24 @@
-<script>
-  const chosen = window.localStorage.getItem("chosen_lang");
-  if (!chosen) {
-    window.localStorage.setItem("chosen_lang", "en");
-    window.location.replace("/en");
-  } else {
-    window.location.replace("/" + chosen);
-  }
-</script>
+---
+import BaseHead from "../components/BaseHead.astro";
+
+let title = "Elanode's Blog";
+let description = "Elanode's blog";
+let permalink = "/";
+---
+
+<html lang="en">
+  <head>
+    <BaseHead {title} {description} {permalink} />
+  </head>
+  <body>
+    <script>
+      const chosen = window.localStorage.getItem("chosen_lang");
+      if (!chosen) {
+        window.localStorage.setItem("chosen_lang", "en");
+        window.location.replace("/en");
+      } else {
+        window.location.replace("/" + chosen);
+      }
+    </script>
+  </body>
+</html>
