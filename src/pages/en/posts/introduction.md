@@ -1,16 +1,17 @@
 ---
 setup: |
   import Layout from '../../../layouts/BlogPost.astro'
-  import Cool from '../../../components/Author.astro'
-title: Hello world!
-publishDate: 12 Sep 2021
-name: Nate Moore
-value: 128
-description: Just a Hello World Post!
+  import Author from '../../../components/Author.astro'
+title: Introduction
+publishDate: 09 May 2022
+name: N. Jason
+author: N.Jason
+author_link: https://linkedin.com/in/nicholas-jason-44b828190
+description: Our introduction!
 heroImage: /assets/blog/introducing-astro.jpg
 ---
 
-<Cool name={frontmatter.name} href="https://twitter.com/n_moore" client:load />
+<Author name={frontmatter.name} href={frontmatter.author_link} client:load />
 
 ```php
 class HelloWorld {
