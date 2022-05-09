@@ -8,6 +8,7 @@
           underline: currentLang == lang,
           'pointer-events-none': currentLang == lang,
         }"
+        @click="rememberLanguage(lang)"
         >{{ lang }}</a
       >
       <span v-if="index !== langs.length - 1">&nbsp;|&nbsp;</span>
@@ -49,6 +50,9 @@ export default {
       }
 
       this.currentLang = paths[1];
+    },
+    rememberLanguage(lang) {
+      window.localStorage.setItem("chosen_lang", lang);
     },
   },
 };

@@ -1,1 +1,9 @@
-<script> window.location = "/en"; </script>
+<script>
+  const chosen = window.localStorage.getItem("chosen_lang");
+  if (!chosen) {
+    window.localStorage.setItem("chosen_lang", "en");
+    window.location.replace("/en");
+  } else {
+    window.location.replace("/" + chosen);
+  }
+</script>
