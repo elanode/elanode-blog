@@ -1,29 +1,29 @@
 @font-face {
   font-family: "AndaleMono";
-  src: url("../assets/fonts/andale/andalemo.ttf");
+  src: url("/fonts/andale/andalemo.ttf");
 }
 
 @font-face {
   font-family: "D-DinPro";
-  src: url("../assets/fonts/d-din/otf/D-DIN-PRO-400-Regular.otf");
+  src: url("/fonts/d-din/otf/D-DIN-PRO-400-Regular.otf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "D-DinPro";
-  src: url("../assets/fonts/d-din/otf/D-DIN-PRO-500-Medium.otf");
+  src: url("/fonts/d-din/otf/D-DIN-PRO-500-Medium.otf");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "D-DinPro";
-  src: url("../assets/fonts/d-din/otf/D-DIN-PRO-600-SemiBold.otf");
+  src: url("/fonts/d-din/otf/D-DIN-PRO-600-SemiBold.otf");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "D-DinPro";
-  src: url("../assets/fonts/d-din/otf/D-DIN-PRO-700-Bold.otf");
+  src: url("/fonts/d-din/otf/D-DIN-PRO-700-Bold.otf");
   font-weight: 700;
 }
 
