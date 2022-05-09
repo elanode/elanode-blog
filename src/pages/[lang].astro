@@ -15,14 +15,6 @@ import IconGithubDark from '../components/Icon/IconGithubDark.astro';
 import IconUpWork from '../components/Icon/IconUpWork.astro';	
 import IconLinkedIn from '../components/Icon/IconLinkedIn.astro';	
 
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = 'Title';
-let description = 'The perfect starter for your perfect blog.';
-let permalink = 'https://blog.elanode.com/';
-
 // Data Fetching: List all Markdown posts in the repo.
 let lang = Astro.canonicalURL.pathname.split('/')[1];
 let trans = getTranslations(lang)
@@ -38,6 +30,11 @@ switch (lang) {
 }
 
 allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+
+let title = trans.index.welcome;
+let description = trans.index.description;
+let permalink = '/' + lang;
+
 
 
 // Full Astro Component Syntax:

@@ -21,7 +21,6 @@ export default {
   },
   computed: {
     upperCased() {
-      console.log(this.text);
       return this.text.toUpperCase();
     },
   },
