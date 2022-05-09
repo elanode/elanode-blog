@@ -8,6 +8,7 @@ name: Nate Moore
 value: 128
 description: Just a Hello World Post!
 heroImage: /assets/blog/introducing-astro.jpg
+lang: id
 ---
 
 <Cool name={frontmatter.name} href="https://twitter.com/n_moore" client:load />

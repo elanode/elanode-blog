@@ -1,0 +1,36 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import elanodeLogoBlue from "../assets/images/Elanode-logo-blue.png";
+
+let title = "404 Not Found";
+let description = "Elanode Blog.";
+let permalink = "https://blog.elanode.com/404";
+---
+
+<html lang="en">
+  <head>
+    <BaseHead {title} {description} {permalink} />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main
+        class="content min-h-screen flex flex-col align-middle justify-center"
+      >
+        <img src={elanodeLogoBlue} alt="elanode logo blue" width="500" />
+        <h1 class="text-5xl">Sorry, 404 Not Found</h1>
+        <div class="flex">
+          <button
+            class="border border-blue text-dark rounded-md px-4 py-2 m-2 transition duration-300 ease select-none hover:bg-blue hover:text-white focus:outline-none focus:shadow-outline mt-10"
+            onclick="history.back()">Back</button
+          >
+          <a href="/" class="decoration-none">
+            <button
+              class="border border-blue text-dark rounded-md px-4 py-2 m-2 transition duration-300 ease select-none hover:bg-blue hover:text-white focus:outline-none focus:shadow-outline mt-10"
+              >Home</button
+            >
+          </a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

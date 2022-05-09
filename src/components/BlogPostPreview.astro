@@ -1,10 +1,16 @@
 ---
+import BasePill from "./Base/BasePill.vue";
 export interface Props {
   post: any;
 }
 
 const { post } = Astro.props;
 let heroImage = post.frontmatter?.heroImage;
+
+let categories = post.frontmatter?.categories;
+if (categories) {
+  categories = categories.split(",");
+}
 
 if (!heroImage) {
   heroImage = "/social.jpg";
@@ -27,13 +33,17 @@ if (!heroImage) {
         <div class="p-5 text-left w-full">
           <small class="text-blue-400 text-xs"
             >{post.frontmatter.publishDate}</small
-          >
+          >         
           <h1 class="text-2xl font-medium text-slate-600 pb-2">
             {post.frontmatter.title}
           </h1>
           <p class="text-sm tracking-tight font-light text-slate-400 leading-6">
             {post.frontmatter.description}
           </p>
+          <hr class="mt-4">
+          <div class="flex gap-x-2 gap-y-1 flex-wrap mt-4">
+            {categories && categories.map((c) =>  <BasePill text={c} />)}
+          </div>
         </div>
       </div>
     </a>

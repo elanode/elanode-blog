@@ -4,11 +4,12 @@ setup: |
   import Author from '../../../components/Author.astro'
 title: Introduction
 publishDate: 09 May 2022
-name: N. Jason
-author: N.Jason
+name: Jason C
+author: Jason C
 author_link: https://linkedin.com/in/nicholas-jason-44b828190
 description: Our introduction!
 heroImage: /assets/blog/introducing-astro.jpg
+categories: general
 ---
 
 <Author name={frontmatter.name} href={frontmatter.author_link} client:load />
