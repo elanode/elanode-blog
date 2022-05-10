@@ -11,6 +11,7 @@ const {
   author,
   author_link,
   heroImage,
+  heroImageCaption,
   permalink,
   alt,
 } = content;
@@ -20,7 +21,7 @@ const {
   <head>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-lucario.css"
+      href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-dracula.css"
     />
     <BaseHead {title} {description} {permalink} />
   </head>
@@ -28,7 +29,15 @@ const {
   <body>
     <BlogHeader />
     <div class="wrapper">
-      <BlogPost {title} {author} {author_link} {heroImage} {publishDate} {alt}>
+      <BlogPost
+        {title}
+        {author}
+        {author_link}
+        {heroImage}
+        {heroImageCaption}
+        {publishDate}
+        {alt}
+      >
         <slot />
       </BlogPost>
     </div>

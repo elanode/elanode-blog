@@ -7,17 +7,19 @@ export interface Props {
 	author_link: string;
 	publishDate: string;
 	heroImage: string;
+	heroImageCaption: string;
 	alt: string;
 }
 
-const { title, author, author_link, publishDate, heroImage, alt } = Astro.props;
+const { title, author, author_link, publishDate, heroImage,heroImageCaption, alt } = Astro.props;
 ---
 
 <div class="layout">
 	<article class="content">
 		<div>
 			<header>
-				{heroImage && <img width="720" class="my-10" loading="lazy" src={heroImage} alt={alt} />}
+				{heroImage && <img width="720" class="mt-10 mb-4" loading="lazy" src={heroImage} alt={alt} />}
+				<small class="mb-6"><a href={heroImageCaption} target="_blank" rel="noopener noreferrer" class="underline text-black italic">{heroImageCaption}</a></small>
 				<p class="publish-date">{publishDate}</p>
 				<h1 class="title">{title}</h1>
 				<Author name={author} href={author_link} />

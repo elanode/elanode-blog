@@ -9,10 +9,12 @@ author: Jason C
 author_link: https://linkedin.com/in/nicholas-jason-44b828190
 description: Our introduction!
 heroImage: /assets/blog/introducing-astro.jpg
+heroImageCaption: https://google.com 
 categories: general
 ---
 
 <Author name={frontmatter.name} href={frontmatter.author_link} client:load />
+
 
 ```php
 class HelloWorld {
