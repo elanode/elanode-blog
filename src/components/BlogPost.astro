@@ -24,9 +24,13 @@ if (categories) {
 <div class="layout">
 	<article class="content">
 		<div>
-			<header>
-				{heroImage && <img width="720" class="mt-10 mb-4 shadow-lg rounded-lg" loading="lazy" src={heroImage} alt={alt} />}
-				<small class="mb-6 credit"><a href={heroImageCaption} target="_blank" rel="noopener noreferrer" class="underline italic transition hover:text-blue">{heroImageCaption}</a></small>
+			<header class="overflow-hidden">
+				{heroImage && <img width="720" class="mt-10 mb-2 shadow-lg rounded-lg" loading="lazy" src={heroImage} alt={alt} />}
+				<small class="mb-8 credit">
+					<a href={heroImageCaption} target="_blank" rel="noopener noreferrer" class="underline transition hover:text-blue">
+						source
+					</a>
+				</small>
 				<p class="publish-date">{publishDate}</p>
 				<h1 class="title">{title}</h1>
 				<Author name={author} href={author_link} />
