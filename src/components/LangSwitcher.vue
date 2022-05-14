@@ -3,9 +3,9 @@
     <div v-for="(lang, index) in langs" :key="index">
       <a
         :href="getRedirectLink(lang)"
-        class="text-black"
+        class="text-black no-underline"
         :class="{
-          underline: currentLang == lang,
+          'text-blue font-bold': currentLang == lang,
           'pointer-events-none': currentLang == lang,
         }"
         @click="rememberLanguage(lang)"

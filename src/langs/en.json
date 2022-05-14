@@ -3,5 +3,9 @@
     "welcome": "Welcome to our blog!",
     "subtitle": "Here we will share some of our interesting stories, experiences, tutorials, thoughts and many more! 🚀",
     "description": "Welcome to Elanode's Blog"
+  },
+  "blogPost": {
+    "thanks_for_reading": "Thanks for reading",
+    "mail_us": "Mail Us!"
   }
 }

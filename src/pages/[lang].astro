@@ -11,9 +11,7 @@ import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 import {getTranslations} from '../langs/translations.js';
-import IconGithubDark from '../components/Icon/IconGithubDark.astro';	
-import IconUpWork from '../components/Icon/IconUpWork.astro';	
-import IconLinkedIn from '../components/Icon/IconLinkedIn.astro';	
+import TheLinks from '../components/The/TheLinks.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 let lang = Astro.canonicalURL.pathname.split('/')[1];
@@ -56,13 +54,7 @@ let permalink = '/' + lang;
 					<h1 class="font-bold text-2xl">{trans.index.welcome}</h1>
 					<h2 class="text-xl">{trans.index.subtitle}</h2>
 				</section>
-				<section class="mb-8 flex justify-end gap-x-2 align-baseline border-b-2 border-blue pb-8">
-					<IconGithubDark />
-					<span>|</span>
-					<IconUpWork />
-					<span>|</span>
-					<IconLinkedIn />
-				</section>
+				<TheLinks />
 				<section class="grid gap-x-4 gap-y-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 					{allPosts.map((p) => <BlogPostPreview post={p} />)}
 				</section>

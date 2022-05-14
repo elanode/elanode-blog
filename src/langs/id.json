@@ -3,5 +3,9 @@
     "welcome": "Selamat Datang!",
     "subtitle": "Disini kami akan berbagi beberapa tulisan menarik mengenai cerita, pengalaman, pelajaran, ide dan banyak lagi! 🚀",
     "description": "Selamat Datang di Blog Elanode"
+  },
+  "blogPost": {
+    "thanks_for_reading": "Terima Kasih sudah membaca",
+    "mail_us": "E-mail Kami!"
   }
 }
