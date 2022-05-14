@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/blog.css";
+import { GoogleAnalytics } from "astro-analytics";
 
 export interface Props {
   title: string;
@@ -22,6 +23,8 @@ const seoTitle = title + " | Elanode";
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 <meta name="msapplication-TileColor" content="#2b5797" />
 <meta name="theme-color" content="#ffffff" />
+
+<GoogleAnalytics id="G-FFMBFZJYM4" />
 
 <!-- Primary Meta Tags -->
 <title>{seoTitle}</title>
